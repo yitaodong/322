@@ -1,0 +1,195 @@
+*{
+padding : 0;
+margin : 0;
+border : 0;
+}
+body{
+background-image : url('lol_sf.jpg');
+background-attachment : fixed;
+/*background-size : 100% auto;*/
+background-size:cover
+}
+.blended_grid{
+display : block;
+width : 1000px;
+overflow : auto;
+margin : 50px auto 0 auto;
+}
+.pageHeader{
+/*background-color : rgba(255, 0, 0, 0.3);*/
+float : left;
+clear : none;
+height : 100px;
+width : 1000px;
+}
+/*.pageLeftMenu{
+background-color : rgba(0, 255, 0, 0.3);
+float : left;
+clear : none;
+height : 600px;
+width : 160px;
+}*/
+.pageContent{
+background-color : rgba(20, 82, 82, 0.3);
+float : left;
+clear : none;
+height : 2000px;
+width : 1000px;
+
+  margin: 0 auto;
+}
+/*.pageRightMenu{
+background-color :rgba(0, 255, 0, 0.3);
+float : left;
+clear : none;
+height : 600px;
+width : 160px;
+}*/
+.pageFooter{
+background-color : rgba(20, 82, 82, 0.3);
+border-radius: 25px;
+float : left;
+clear : none;
+height : 100px;
+width : 1000px;
+
+  margin: 0 auto;
+}
+.footer{
+    text-align: center;
+    font-size:20px;
+    color:white;
+}
+
+/*****************************************
+tab table
+***************************************/
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: none;
+    
+
+}
+
+/* Style the buttons that are used to open the tab content */
+.tablinks {
+    font-size: 20px;
+    /*background-color : rgba(20, 82, 82, 1.0);*/
+    background-color: #161C1C;
+    border-color: #008B8B;
+    color: #F0FFF0;
+    float: left;
+    /*border: none;*/
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width:20%;
+    height: 50px;
+    transform: perspective(5px) rotateX(2deg);
+    transform-origin: bottom;
+    border-radius: 5px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #4E5858;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #4E5858;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /*-webkit-animation: fadeEffect 1s;*/
+    animation: fadeEffect 1s;
+    position: relative;
+    border-width:5px; 
+    border-style:ridge;
+    border-color:#0A2F2F;
+    /*background-color:#1A6C6C;*/
+}
+
+/* Fade in tabs */
+/*@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+*/
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* User Drop Down List*/
+.dropbtn {
+    background-color: inherit;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width:100px;
+}
+
+.dropdown {
+    /*position:absolute;
+   top:0;
+   left:900px;*/
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+    min-width: 200px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content a {
+    float: none;
+    color:#000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    clear: both;
+    text-align:center;
+    width:80;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.show {display:block;}
+
+.navbar {
+    /*overflow: hidden;*/
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+	text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
